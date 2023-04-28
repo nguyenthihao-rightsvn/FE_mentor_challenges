@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
+  <link rel="stylesheet" href="../styles//shared.css">
+  <link rel="stylesheet" href="../styles/qr-code-component.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <title>Challenge split | QR code component</title>
+</head>
+<body>
+  <div class="w-full h-screen flex">
+    <!-- The challenge resuilt -->
+    <div class="flex items-center px-16 bg-slate-200 bg-grid">
+      <div class="qr-container">
+        <div class="qr-img">
+          <img src="../images/image-qr-code.png" alt="fe-mentor-qr">
+        </div>
+        <div class="qr-memo">
+          <h3>Improve your front-end skills by building projects</h3>
+          <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- The challenge split -->
+    <div class="grow max-h-screen overflow-y-scroll bg-sky-50">
+      <!-- split point: box model -->
+      <div class="h-full px-16 py-6">
+        <!-- intro -->
+        <div class="pb-6">
+          <span>01</span>
+          <h3 class="text-2xl text-sky-700 font-bold leading-10">Box model</h3>
+          <p class="text-lg text-gray-600 leading-5">
+            A really important thing to remember when writing CSS, is that everything displayed by CSS is a box.
+            Whether that's a box that uses border-radius to look like a circle, or even just some text:
+            the key thing to remember is that it's all boxes.
+          </p>
+        </div>
+        <!-- content -->
+        <div>
+          <section class="mb-4">
+            <h4 class="text-lg text-sky-700">Content and sizing</h4>
+            <p>
+              The box content will affect the size of the box by default. <br>
+              You can control this by using <b>extrinsic sizing</b>, or, you can continue to let the browser make decisions for you based on the content size, using <b>intrinsic sizing</b>.
+            </p>
+          </section>
+          <section class="mb-4">
+            <h4 class="text-lg text-sky-700">The areas of the box model</h4>
+            <p>
+              Boxes are made up of distinct box model areas that all do a specific job. <br>
+              The four main areas of the box model: content box, padding box, border box and margin box.
+              <img
+                src="https://web-dev.imgix.net/image/VbAJIREinuYvovrBzzvEyZOpw5w1/ECuEOJEGnudhXW5JEFih.svg"
+                alt="areas-of-box"
+                class="w-2/5"
+              >
+            </p>
+          </section>
+          <section class="mb-4">
+            <h4 class="text-lg text-sky-700">Controlling the box model</h4>
+            <p>
+              You also need to understand <b>box-sizing</b>, which tells our box how to calculate its box size. <br>
+              By default, all elements have the following user agent style: <code>box-sizing: content-box;</code>. <br>
+              You can use the alternative box model, <b>border-box</b>.
+            </p>
+          </section>
+        </div>
+      </div>
+
+      <!-- split point: Selector -->
+      <div class="h-full px-16 py-6">
+        <!-- intro -->
+        <div class="pb-6">
+          <span>02</span>
+          <h3 class="text-2xl text-sky-700 font-bold leading-10">Selector</h3>
+          <p class="text-lg text-gray-600 leading-5">
+            To apply CSS to an element you need to select it. <br>
+            CSS provides you with a number of different ways to do this called selectors
+          </p>
+        </div>
+        <!-- content -->
+        <div>
+          <section class="mb-4">
+            <h4 class="text-lg text-sky-700">The parts of a CSS rule</h4>
+            <p>
+              To understand how selectors work and their role in CSS, it's important to know the parts of a CSS rule. <br>
+              A CSS rule is a block of code, containing one or more selectors and one or more declarations.
+              <img src="https://web-dev.imgix.net/image/VbAJIREinuYvovrBzzvEyZOpw5w1/hFR4OOwyH5zWc5XUIcyu.svg" alt="css-rule">
+            </p>
+          </section>
+          <section class="mb-4">
+            <h4 class="text-lg text-sky-700">Simple selectors</h4>
+            <p>
+              <ul>
+                <li>Universal selector</li>
+                <li>Type selector</li>
+                <li>Class selector</li>
+                <li>ID selector</li>
+                <li>Grouping selectors</li>
+              </ul>
+            </p>
+          </section>
+          <section class="mb-4">
+            <h4 class="text-lg text-sky-700">Complex selectors</h4>
+            <p>
+              <ul>
+                <li>Combinators</li>
+                <li>Compound selectors</li>
+              </ul>
+            </p>
+          </section>
+        </div>
+      </div>
+
+      <!-- split point: The cascade -->
+      <div class="h-full px-16 py-6">
+        <!-- intro -->
+        <div class="pb-6">
+          <span>02</span>
+          <h3 class="text-2xl text-sky-700 font-bold leading-10">The cascade</h3>
+          <p class="text-lg text-gray-600 leading-5">
+            To apply CSS to an element you need to select it. <br>
+            CSS provides you with a number of different ways to do this called selectors
+          </p>
+        </div>
+        <!-- content -->
+        <div>
+          <section class="mb-4">
+            <h4 class="text-lg text-sky-700">The parts of a CSS rule</h4>
+            <p>
+              To understand how selectors work and their role in CSS, it's important to know the parts of a CSS rule. <br>
+              A CSS rule is a block of code, containing one or more selectors and one or more declarations.
+              <img src="https://web-dev.imgix.net/image/VbAJIREinuYvovrBzzvEyZOpw5w1/hFR4OOwyH5zWc5XUIcyu.svg" alt="css-rule">
+            </p>
+          </section>
+          <section class="mb-4">
+            <h4 class="text-lg text-sky-700">Simple selectors</h4>
+            <p>
+              <ul>
+                <li>Universal selector</li>
+                <li>Type selector</li>
+                <li>Class selector</li>
+                <li>ID selector</li>
+                <li>Grouping selectors</li>
+              </ul>
+            </p>
+          </section>
+          <section class="mb-4">
+            <h4 class="text-lg text-sky-700">Complex selectors</h4>
+            <p>
+              <ul>
+                <li>Combinators</li>
+                <li>Compound selectors</li>
+              </ul>
+            </p>
+          </section>
+        </div>
+      </div>
+
+      <!-- <ul>
+        <li>Color</li>
+        <li>Sizing Units</li>
+        <li>flex box</li>**
+        <li>Spacing</li>
+        <li>Text and typography</li>
+      </ul> -->
+    </div>
+  </div>
+</body>
+</html>

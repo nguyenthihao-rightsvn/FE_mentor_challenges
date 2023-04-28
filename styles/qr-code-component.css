@@ -1,0 +1,58 @@
+@font-face {
+  font-family: outFit;
+  src: url("../fonts/Outfit-Light.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: outFit;
+  src: url("../fonts/Outfit-SemiBold.ttf");
+  font-weight: 700;
+}
+
+body {
+  font-family: outFit;
+  font-size: 15px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #7b879d;
+
+}
+
+.qr-container {
+  width: 260px;
+  padding: 14px;
+  border-radius: 16px;
+  background-color: #fff;
+}
+
+.qr-img {
+  line-height: 0;
+}
+.qr-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.qr-memo {
+  margin: 16px 0;
+  padding: 0 10px;
+  text-align: center;
+}
+.qr-memo h3 {
+  margin: 16px 0;
+  font-size: 18px;
+  font-weight: 700;
+  color: #1f3251;
+}
+.qr-memo p {
+  margin: 0;
+  color: #d6e2f0;
+}
