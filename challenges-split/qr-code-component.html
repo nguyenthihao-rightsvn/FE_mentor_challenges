@@ -7,6 +7,8 @@
   <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
   <link rel="stylesheet" href="../styles//shared.css">
   <link rel="stylesheet" href="../styles/qr-code-component.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
   <script src="https://cdn.tailwindcss.com"></script>
 
   <title>Challenge split | QR code component</title>
@@ -27,9 +29,9 @@
     </div>
 
     <!-- The challenge split -->
-    <div class="grow max-h-screen overflow-y-scroll bg-sky-50">
+    <div id="challengeSplit" class="grow max-h-screen overflow-hidden bg-sky-50">
       <!-- split point: box model -->
-      <div class="h-full px-16 py-6">
+      <div class="h-full overflow-y-scroll overscroll-none px-16 py-6">
         <!-- intro -->
         <div class="pb-6">
           <span>01</span>
@@ -57,7 +59,7 @@
               <img
                 src="https://web-dev.imgix.net/image/VbAJIREinuYvovrBzzvEyZOpw5w1/ECuEOJEGnudhXW5JEFih.svg"
                 alt="areas-of-box"
-                class="w-2/5"
+                class="w-1/2"
               >
             </p>
           </section>
@@ -73,7 +75,7 @@
       </div>
 
       <!-- split point: Selector -->
-      <div class="h-full px-16 py-6">
+      <div class="h-full overflow-y-scroll overscroll-none px-16 py-6">
         <!-- intro -->
         <div class="pb-6">
           <span>02</span>
@@ -90,7 +92,11 @@
             <p>
               To understand how selectors work and their role in CSS, it's important to know the parts of a CSS rule. <br>
               A CSS rule is a block of code, containing one or more selectors and one or more declarations.
-              <img src="https://web-dev.imgix.net/image/VbAJIREinuYvovrBzzvEyZOpw5w1/hFR4OOwyH5zWc5XUIcyu.svg" alt="css-rule">
+              <img
+                src="https://web-dev.imgix.net/image/VbAJIREinuYvovrBzzvEyZOpw5w1/hFR4OOwyH5zWc5XUIcyu.svg"
+                alt="css-rule"
+                class="w-1/2"
+              >
             </p>
           </section>
           <section class="mb-4">
@@ -118,58 +124,129 @@
       </div>
 
       <!-- split point: The cascade -->
-      <div class="h-full px-16 py-6">
+      <div class="h-full overflow-y-scroll overscroll-none px-16 py-6">
         <!-- intro -->
         <div class="pb-6">
-          <span>02</span>
+          <span>03</span>
           <h3 class="text-2xl text-sky-700 font-bold leading-10">The cascade</h3>
           <p class="text-lg text-gray-600 leading-5">
-            To apply CSS to an element you need to select it. <br>
-            CSS provides you with a number of different ways to do this called selectors
+            CSS stands for Cascading Stylesheets. <br>
+            The cascade is the algorithm for solving conflicts where multiple CSS rules apply to an HTML element. <br>
+            The cascade algorithm is split into 4 distinct stages.
+            <ul class="pl-4">
+              <li>Position and order of appearance</li>
+              <li>Specificity</li>
+              <li>Origin</li>
+              <li>Importance</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+
+      <!-- split point: Color -->
+      <div class="h-full overflow-y-scroll overscroll-none px-16 py-6">
+        <!-- intro -->
+        <div class="pb-6">
+          <span>04</span>
+          <h3 class="text-2xl text-sky-700 font-bold leading-10">Color</h3>
+          <p class="text-lg text-gray-600 leading-5">
+            There are several different ways to specify color in CSS. <br>
+            In this module we take a look at the most commonly used color values.
           </p>
         </div>
         <!-- content -->
         <div>
           <section class="mb-4">
-            <h4 class="text-lg text-sky-700">The parts of a CSS rule</h4>
+            <h4 class="text-lg text-sky-700">Hex colors</h4>
             <p>
-              To understand how selectors work and their role in CSS, it's important to know the parts of a CSS rule. <br>
-              A CSS rule is a block of code, containing one or more selectors and one or more declarations.
-              <img src="https://web-dev.imgix.net/image/VbAJIREinuYvovrBzzvEyZOpw5w1/hFR4OOwyH5zWc5XUIcyu.svg" alt="css-rule">
+              The hexadecimal ranges are 0-9 and A-F. <br>
+              When used in a six digit sequence, they are translated to the RGB numerical ranges which are 0-255 which correspond to the red, green, and blue color channels respectively. <br>
+              You can also define an alpha value with any numerical colors. An alpha value is a percentage of transparency.
             </p>
           </section>
           <section class="mb-4">
-            <h4 class="text-lg text-sky-700">Simple selectors</h4>
+            <h4 class="text-lg text-sky-700">RGB (Red, Green, Blue) </h4>
             <p>
-              <ul>
-                <li>Universal selector</li>
-                <li>Type selector</li>
-                <li>Class selector</li>
-                <li>ID selector</li>
-                <li>Grouping selectors</li>
-              </ul>
+              RGB colors are defined with the rgb() color function, using either numbers or percentages as parameters. <br>
+              The numbers need to be within the 0-255 range and the percentages are between 0% and 100%‌. <br>
+              An alpha is set in rgb() in one of two ways. Either add a / after the red, green and blue parameters, or use the rgba() function.
             </p>
           </section>
           <section class="mb-4">
-            <h4 class="text-lg text-sky-700">Complex selectors</h4>
+            <h4 class="text-lg text-sky-700">Where to use color in CSS rules</h4>
             <p>
               <ul>
-                <li>Combinators</li>
-                <li>Compound selectors</li>
+                <li>text</li>
+                <li>background</li>
+                <li>border</li>
+                <li>box shadow</li>
               </ul>
             </p>
           </section>
         </div>
       </div>
 
-      <!-- <ul>
-        <li>Color</li>
-        <li>Sizing Units</li>
-        <li>flex box</li>**
-        <li>Spacing</li>
-        <li>Text and typography</li>
-      </ul> -->
+      <!-- split point: Spacing -->
+      <div class="h-full overflow-y-scroll overscroll-none px-16 py-6">
+        <!-- intro -->
+        <div class="pb-6">
+          <span>05</span>
+          <h3 class="text-2xl text-sky-700 font-bold leading-10">Spacing</h3>
+          <p class="text-lg text-gray-600 leading-5">
+            Find out the method of spacing elements.
+          </p>
+        </div>
+        <!-- content -->
+        <div>
+          <section class="mb-4">
+            <h4 class="text-lg text-sky-700">Margin</h4>
+            <p>
+              If you want to add space to the outside of an element, you use the margin property. <br>
+              The margin property is shorthand for margin-top, margin-right, margin-bottom and margin-left. <br>
+              The margin shorthand can also be used with one, two, or three values. Adding a fourth value lets you set each individual side. These are applied as follows: <br>
+              <ul class="list-disc pl-10">
+                <li>One value: all sides. (margin: 20px). </li>
+                <li>Two values: top-bottom and left-right. (margin: 20px 40px)</li>
+                <li>Three values: top and left-right and bottom. (margin: 20px 40px 30px). <br></li>
+              </ul>
+            </p>
+          </section>
+          <section class="mb-4">
+            <h4 class="text-lg text-sky-700">Margin auto</h4>
+            <p>
+              A good example of auto margin is a horizontally centered wrapper which has a max width. <br>
+              This sort of wrapper is often used to create a consistent center column on a website.
+            </p>
+          </section>
+          <section class="mb-4">
+            <h4 class="text-lg text-sky-700">Padding</h4>
+            <p>
+              The padding property creates space on the inside of your box
+            </p>
+          </section>
+        </div>
+      </div>
     </div>
   </div>
+
+  <script>
+    var challengeSplitEl = document.getElementById('challengeSplit');
+    var splitID = 0;
+
+    document.onkeydown = function(e) {
+    switch (e.keyCode) {
+      case 38:
+        // up key pressed
+        splitID -= 1;
+        challengeSplitEl.scrollTo({top: challengeSplitEl.offsetHeight * splitID, behavior: 'smooth'});
+        break;
+      case 40:
+        // down key pressed
+        splitID += 1;
+        challengeSplitEl.scrollTo({top: challengeSplitEl.offsetHeight * splitID, behavior: 'smooth'});
+        break;
+      }
+    };
+  </script>
 </body>
 </html>
